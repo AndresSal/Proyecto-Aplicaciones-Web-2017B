@@ -1,0 +1,234 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-8">
+                <h1 class="my-4">
+                    Seccion Cuyabeno
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+                        <p class="card-text">
+                            Los humedales de la Reserva Faunística Cuyabeno forman parte de la
+                            zona ecológica amazónica, llamada “Igapó”. En la época lluviosa los ríos se desbordan formando el bosque de inundación y los meandros forman lagunas o sistemas lacustres tropicales; hay una alta biodiversidad de vertebrados e invertebrados (terrestres y acuáticos).
+                        </p>
+
+
+                        <p>
+                            <img alt="" src="@ViewBag.Base64String2" style="height:280px;width:599.9px;" />
+                            <h5 class="card-text">El Hoaztin</h5>
+                            Llamado también pava hedionda. Son aves extrañas, los pichones tienen dos garras en cada ala, que le ayudan a sujetarse de las ramas. Se alimentan de gran cantidad de hojas y frutos y su digestión es por fermentación bacteriana.
+                        </p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!--Calificaciones-->
+
+                <div class="card my-4">
+                    <h5 class="card-header">Datos Técnicos</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <p class="card-text">
+                                            <table style="width:20%;">
+                                                <tr>
+                                                    <td>
+                                                        Ubicación
+                                                    </td>
+                                                    <td>
+                                                        Baja amazonía, noreste del Ecuador, provincia de Sucumbíos.
+                                                        <br />
+                                                        Es un complejo lacustre tropical formado por 21 lagunas de las cuales sobresalen tres: Laguna Grande, Cuyabeno y Canangüeno.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Altitud
+                                                    </td>
+                                                    <td>
+                                                        200 msnm
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Clima
+                                                    </td>
+                                                    <td>
+                                                        Cálido Húmedo
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Precipitación anual
+                                                    </td>
+                                                    <td>
+                                                        2500 mm al año
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        temperatura
+                                                    </td>
+                                                    <td>
+                                                        25ºC
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ayuda-->
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card my-4">
+                    <h5 class="card-header">Flora y Fauna de la reserva</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <br />
+                                        <h5>Manatí</h5>
+                                        <h7>(Trichechus inunguis)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String3" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Delfín de Río</h5>
+                                        <h7>(Inia geoffrensis)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String4" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Cardenal Gorrirojo</h5>
+                                        <h7>(Paroaria gularis)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String5" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Ceibo</h5>
+                                        <h7>(Ceiba pentandra)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String6" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Cedro</h5>
+                                        <h7>(Cedrela)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String7" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Pambil</h5>
+                                        <h7>(Iriartea)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String8" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="@ViewBag.ImageData" />
+                <br />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

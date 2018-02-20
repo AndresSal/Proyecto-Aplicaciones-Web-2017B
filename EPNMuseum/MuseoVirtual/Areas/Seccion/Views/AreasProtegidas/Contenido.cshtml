@@ -1,0 +1,98 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-12">
+                <h1 class="my-4">
+                    Seccion Areas Protegidas
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h5 class="card-title">¿Qué son las áreas protegidas?</h5>
+                            “Son espacios geográficos claramente definidos, reconocidos y gestionados, mediante medios legales u otros tipos de medios eficaces para conseguir la conservación a largo plazo de la naturaleza y de sus servicios ecosistémicos y sus valores culturales asociados” (Dudley,2008. Pag.10).
+                        </p>
+                        <p>En Ecuador, las áreas protegidas representan aproximadamente el 20% del territorio nacional conservado, se enmarcan en la máxima categoría de protección de acuerdo con la legislación ambiental nacional, por Constitución de la República son parte de uno de los subsistemas del gran Sistema Nacional de Áreas Protegidas (SNAP) conocido como Patrimonio de Áreas Naturales del Estado (PANE), distribuidas en todo el territorio continental e insular, albergan una importante riqueza biológica, servicios ecosistémicos de los cuales se benefician tanto las poblaciones urbanas como rurales, una riqueza paisajísitica que permite el turismo y la recreación en parte de ellas, y por su importancia ecológica trascienden fronteras que son reconocidas a nivel internacional.</p>
+                        <br />
+                        <p>
+                            <h5 class="card-title">Parques Nacionales</h5>
+                            Los Parques nacionales de Ecuador son áreas naturales terrestres o marinas, con superficies medianas o grandes , que incluyen uno o más ecosistemas o formaciones vegetales en estado natural o con muy leve alteración, pueden incluir recursos histórico-culturales integrados en ambientes naturales y existe una buena representación de la diversidad de especies y de los recursos genéticos silvestres.
+                        </p>
+                        <br />
+                        <p class="card-text">
+                            <h5 class="card-title">Reservas Biológicas</h5>
+                            Las Reservas Biológicas del Ecuador son áreas naturales terrestres y/o marinas de tamaño variable que contienen un conjunto de ecosistemas o macroecosistemas intactos o muy bien conservados, con poca intervención humana. La mayor diversidad de especies y los recursos genéticos silvestres están representados en el área.
+                            <br />
+                        <p>
+                            <h5 class="card-title">Reservas Ecológicas</h5>
+                            Las Reservas Ecológicas del Ecuador son áreas naturales terrestres y/o marinas generalmente grandes que pueden incluir uno o varios ecosistemas o formaciones vegetales en estado natural o con alteración mediana. Revisten importancia nacional o regional para el manejo y utilización sustentable de los recursos naturales en beneficio de las comunidades humanas ancestrales presentes al momento de su establecimiento.
+                        </p>
+                        <br />
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

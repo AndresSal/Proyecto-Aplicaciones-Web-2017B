@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sistemaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="sistemaModelStoreContainer">
+    <EntitySet Name="Imagenes" EntityType="sistemaModel.Store.Imagenes" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Imagenes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Imagen" Type="varbinary(max)" Nullable="true" />
+    <Property Name="Seccion" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema>

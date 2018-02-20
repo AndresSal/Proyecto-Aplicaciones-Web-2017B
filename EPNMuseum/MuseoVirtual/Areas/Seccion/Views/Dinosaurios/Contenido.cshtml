@@ -1,0 +1,144 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-12">
+                <h1 class="my-4">
+                    Seccion Dinosaurios
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+                        <p class="card-text">
+                            Los dinosaurios fueron enormes reptiles que habitaron en nuestro planeta tierra durante 160 millones de años aproximadamente, en la era mesozoica y se encuentran ubicados en el superorden de vertebrados saurósipdos.  La palabra dinosaurio viene del griego y significa “lagarto terrible”, el científico Richard Owen fue quien empleó  el término en 1841, porque para él eran enormes lagartos que le infundían respeto y admiración.
+                        </p>
+
+
+                        <p>
+                            <img alt="" src="@ViewBag.Base64String2" style="height:280px;width:599.9px;" />
+                            <h5 class="card-text">Los Terópodos</h5>
+                            Los Terópodos eran carnívoros enormes. El Tyrannosaurus (o Tiranosaurio) tenía una fuerte cabeza musculosa y poderosas garras, sus patas delanteras eran pequeñas, pero sus patas traseras y sus caderas eran enormes, así que Para cazar fijaba su inmenso cuerpo y con sus mandíbulas desgarraba la carne de la presa.  Existieron terópodos  muy pequeños, cazaban en manada persiguiendo a sus presas y atacaban con dientes y garras.
+                        </p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card my-4">
+                    <h5 class="card-header">Algunos de los dinosaurios más importantes</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <br />
+                                        <h5>Velociraptor</h5>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String3" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Anquilosaurio</h5>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String4" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Ceratosaurios</h5>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String5" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Stegosaurios</h5>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String6" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="@ViewBag.ImageData" />
+                <br />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

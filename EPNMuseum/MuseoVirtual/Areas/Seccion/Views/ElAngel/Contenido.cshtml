@@ -1,0 +1,203 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-8">
+                <h1 class="my-4">
+                    Seccion El Angel
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+                        <p class="card-text">Es un valle glaciar con acantilados, mesetas, riachuelos, lagunas y lomas, situado en las faldas del volcán Chiles.  Tiene una extensión de 15.715 ha. Fue creada en 1992 para proteger los recursos biológicos y geológicos. Por la belleza del paisaje se desarrollan actividades de ecoturismo.</p>
+                        <br />
+                        <h5 class="card-title">Frailejones</h5>
+                        <img alt="" src="@ViewBag.Base64String2" style="height:399.9px;width:280px;" />
+                        <p class="card-text">Planta de hasta tres metros de alto; gracias a sus hojas pubescentes dispuestas en forma de roseta y a un líquido anticongelante que contienen en su interior, se han adaptado a condiciones extremas de frío y  humedad.</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!--Calificaciones-->
+
+                <div class="card my-4">
+                    <h5 class="card-header">Datos Técnicos</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <p class="card-text">
+                                            <table style="width:20%;">
+                                                <tr>
+                                                    <td>
+                                                        Ubicación
+                                                    </td>
+                                                    <td>
+                                                        En el ramal occidental de la Cordillera de los Andes, 
+                                                        <br />
+                                                        al norte del Ecuador, provincia del Carchi.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Altitud
+                                                    </td>
+                                                    <td>
+                                                        3644 y 4213 msnm
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Clima
+                                                    </td>
+                                                    <td>
+                                                        Frío, húmedo
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Precipitación anual
+                                                    </td>
+                                                    <td>
+                                                        2000 mm
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        temperatura
+                                                    </td>
+                                                    <td>
+                                                        -7ºC a 22ºC
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ayuda-->
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card my-4">
+                    <h5 class="card-header">Flora y Fauna de la reserva</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <br />
+                                            <h5>Pajonal </h5>
+                                            <h7>(Festuca y Stipa)</h7>
+                                            <br />
+                                            <img alt="" src="@ViewBag.Base64String3" style="height:150px;width:100px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                            <h5>Almohadilla  </h5>
+                                            <h7>(Azorella)</h7>
+                                            <br />
+                                            <img alt="" src="@ViewBag.Base64String4" style="height:200px;width:150px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                            <h5>Venado</h5>
+                                            <h7>(Odocoileus peruvianus)</h7>
+                                            <br />
+                                            <img alt="" src="@ViewBag.Base64String5" style="height:200px;width:100px;" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="@ViewBag.ImageData" />
+                <br />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

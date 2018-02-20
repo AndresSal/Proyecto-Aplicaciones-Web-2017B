@@ -1,0 +1,231 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-8">
+                <h1 class="my-4">
+                    Seccion Chimborazo
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+                        <p class="card-text">El relieve es accidentado y los suelos son de origen volcánico. Como producto de las glaciaciones del Cuaternario, en este sector se notan extensos bancos de lava, valles glaciares en forma de U y cañones formados por grandes rocas verticales.</p>
+                        
+
+                        <p>
+                            <img alt="" src="@ViewBag.Base64String2" style="height:280px;width:599.9px;" />
+                            <h5 class="card-text">El colibri</h5>
+                            Oreotrochilus chimborazo, conocido como: “estrella ecuatoriana”, se alimenta del néctar de las flores de la chuquiragua; a cambio, esta ave contribuye con la polinización, llevando adherido al pico el polen que se desprenderá al visitar la siguiente flor.
+                        </p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!--Calificaciones-->
+
+                <div class="card my-4">
+                    <h5 class="card-header">Datos Técnicos</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <p class="card-text">
+                                            <table style="width:20%;">
+                                                <tr>
+                                                    <td>
+                                                        Ubicación
+                                                    </td>
+                                                    <td>
+                                                        se halla en el centro del país, en el ramal occidental de la cordillera de los Andes.
+                                                        <br />
+                                                        Forma parte de la Reserva de Producción Faunística Chimborazo.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Altitud
+                                                    </td>
+                                                    <td>
+                                                        4400 msnm
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Clima
+                                                    </td>
+                                                    <td>
+                                                        Frío
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Precipitación anual
+                                                    </td>
+                                                    <td>
+                                                        450-650 mm al año
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        temperatura
+                                                    </td>
+                                                    <td>
+                                                        0ºC-19ºC
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ayuda-->
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card my-4">
+                    <h5 class="card-header">Flora y Fauna de la reserva</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <br />
+                                        <h5>Almohadillas</h5>
+                                        <h7>(Azorella pedunculata)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String3" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Achicoria</h5>
+                                        <h7>(Hypochaeris sessiliflora)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String4" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Chuquirahua</h5>
+                                        <h7>(Ghuquiraga jussieui)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String5" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Sapo</h5>
+                                        <h7>(Pristimantis curtipes)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String6" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Conejo</h5>
+                                        <h7>(Sylvilagus brasiliensis)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String7" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Lagartija</h5>
+                                        <h7>(Pholidobolus macbrydei)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String8" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="@ViewBag.ImageData" />
+                <br />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

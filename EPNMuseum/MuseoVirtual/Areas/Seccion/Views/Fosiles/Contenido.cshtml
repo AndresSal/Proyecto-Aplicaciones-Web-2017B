@@ -1,0 +1,131 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-12">
+                <h1 class="my-4">
+                    Seccion Fósiles
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+
+                        <table style="width:100%;">
+                            <tr>
+                                <td>
+                                    <p>Fósil de una mandíbula de mastodonte de la especie Notiomastodon platensis, encontrada en Santa Elena, colectada por Robert Hoffstetter y datada en 40 mil años.</p>
+                                </td>
+                                <td>
+                                    <img alt="" src="@ViewBag.Base64String2" style="height:150px;width:100px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        Defensa derecha de Mastodonte
+                                        Notiomastodon platensis. Este fósil reposa en el museo desde los años cuarenta y que fuera encontrado en la provincia Santa Elena.
+                                    </p>
+                                </td>
+                                <td>
+                                    <img alt="" src="@ViewBag.Base64String3" style="height:150px;width:100px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Omóplato de Mastodonte fósil procedente de un yacimiento de brea en la Península de Santa Elena. Los mastodontes habitaron el Ecuador 2.5 millones de años a 12 años antes.</p>
+                                </td>
+                                <td>
+                                    <img alt="" src="@ViewBag.Base64String4" style="height:150px;width:100px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Cráneo fósil de Megaterio, Eremotherium laurillardi, encontrado en Chanduy, Santa Elena. Los megaterios eran perezosos terrestres de más de 5 m de altura que se desplazaban en posición erguida, sus extremidades estaban dotadas de fuertes garras utilizadas en la defensa o para agarrar el alimento.</p>
+                                </td>
+                                <td>
+                                    <img alt="" src="@ViewBag.Base64String5" style="height:150px;width:100px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        Fémur de perezoso gigante
+                                        Eremotherium laurillardi
+                                        Fue colectado en La Carolina, Santa Elena por Hoffstetter y Orbe.
+                                    </p>
+                                </td>
+                                <td>
+                                    <img alt="" src="@ViewBag.Base64String6" style="height:150px;width:100px;" />
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+

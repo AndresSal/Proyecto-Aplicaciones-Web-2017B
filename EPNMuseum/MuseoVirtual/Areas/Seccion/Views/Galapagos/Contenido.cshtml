@@ -1,0 +1,225 @@
+﻿@using MuseoVirtual.Areas.Seccion.Models
+@model IEnumerable<MuseoVirtual.Areas.Seccion.Models.Imagenes>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Museo Virtual - @ViewBag.Title</title>
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Principal/MenuPrincipal/IniciarMenu">Inicio</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Principal/Map/mostrarMapa">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---->
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de Contenido Principal -->
+            <div class="col-md-8">
+                <h1 class="my-4">
+                    Seccion Galapagos
+                </h1>
+                <!-- Blog Post -->
+                <div class="card mb-4">
+                    <hr />
+                    <img alt="" src="@ViewBag.Base64String1" style="height:280px;width:599.9px;" />
+                    <br />
+                    <div class="card-body">
+                        <p class="card-text">
+                            Las Islas Galápagos son de origen volcánico, se formaron hace unos 5 millones de años. El 32% de su flora y el 60% de su fauna son endémicas.
+                        </p>
+
+
+                        <p>
+                            <img alt="" src="@ViewBag.Base64String2" style="height:280px;width:599.9px;" />
+                            <h5 class="card-text">la tortuga gigante Galápagos</h5>
+                            Las tortugas gigantes pesan 250 kg, miden 1.50 m de largo curvo y pueden vivir más de 150 años. El aislamiento y otros procesos evolutivos contribuyeron a la formación de 14 especies distintas.
+                        </p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!--Calificaciones-->
+
+                <div class="card my-4">
+                    <h5 class="card-header">Datos Técnicos</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <p class="card-text">
+                                            <table style="width:20%;">
+                                                <tr>
+                                                    <td>
+                                                        Ubicación
+                                                    </td>
+                                                    <td>
+                                                        a 960 km al oeste de la costa ecuatoriana,
+                                                        <br />
+                                                        tienen una extensión de 7960 Km2. Incluye 7 islas mayores, 14 menores, 64 islotes y 136 rocas.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Altitud
+                                                    </td>
+                                                    <td>
+                                                        0-1600 msnm
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Clima
+                                                    </td>
+                                                    <td>
+                                                        seco - semidesertico
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Precipitación anual
+                                                    </td>
+                                                    <td>
+                                                        73-400 mm al año
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        temperatura
+                                                    </td>
+                                                    <td>
+                                                        21.5-24.7ºC
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ayuda-->
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card my-4">
+                    <h5 class="card-header">Flora y Fauna de la reserva</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <br />
+                                        <h5>Lobo maríno de galapagos</h5>
+                                        <h7>(Arctocephalus galapagoensiss)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String3" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Cucuve</h5>
+                                        <h7>(Nesomimus)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String4" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Cacto</h5>
+                                        <h7>(Opuntia)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String5" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Palo Santo</h5>
+                                        <h7>(Bursera)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String6" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <br />
+                                        <h5>Guayabillo</h5>
+                                        <h7>(Psidium)</h7>
+                                        <br />
+                                        <img alt="" src="@ViewBag.Base64String7" style="height:399.9px;width:280px;" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="@ViewBag.ImageData" />
+                <br />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
